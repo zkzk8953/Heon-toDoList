@@ -1,0 +1,232 @@
+.product_wrap {
+    width:100%; height: auto;
+    padding-top: 50px;
+}
+
+
+/* 섹션1 */
+
+
+.section_one {
+    width:100%; height: 85vh;
+    background-image: url(../images/back2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.section_one h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.search_tag {
+    display: block;
+    background-color: #fff;
+    color:#ffeedd;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.5);
+    font-weight: 600;
+}
+
+
+/* 섹션2 */
+
+.section_two {
+    width:80%;
+    height: 30vh;
+    margin: 40px auto;
+    display: flex;
+    flex-flow:column nowrap;
+}
+
+.section_two > h2 {
+    padding:20px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.section_two .two_btm {
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.section_three {
+    width:80%; margin: 40px auto;
+}
+
+
+.section_three > h2 {
+    padding:20px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+
+
+.three_btm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.three_btm .content1 {
+    width:24%; height: 300px;
+    background-image: url(../images/1.webp);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.three_btm .content1 p {
+}
+.three_btm .content2 {
+    width:24%; height: 300px;
+    background-image: url(../images/2.webp);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.three_btm .content3 {
+    width:24%; height: 300px;
+    background-image: url(../images/3.webp);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.three_btm .content4 {
+    width:24%; height: 300px;
+    background-image: url(../images/4.webp);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.section_four {
+    width:80%; margin: 40px auto;
+}
+
+.section_four > h2 {
+    padding:20px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.four_btm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.btm_contents {
+    width :32%; 
+}
+.btm_contents p:first-of-type {
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 12px;
+}
+.btm_contents h3 {
+    font-size: 0.875em;
+    font-weight: 600;
+    padding: 15px 0 5px 0;
+}
+.btm_contents p:last-of-type {
+    font-size: 0.750em;
+    
+}
+.first p:first-of-type {
+    background-image: url(../images/11.webp);
+}
+.second p:first-of-type {
+    background-image: url(../images/12.webp);
+}
+.third p:first-of-type {
+    background-image: url(../images/13.webp);
+}
+
+
+
+.section_five {
+    width: 100%; margin:40px auto;
+    height: 50vh;
+    background-color: red;
+    background:url(../images/123456.webp) no-repeat center top;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    flex-flow : column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px;
+    color:#fff;
+}
+.section_five h3 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color:#fff;
+    margin-bottom: 15px;
+}
+.section_five p {
+    margin-bottom: 15px;
+}
+.section_five p:last-of-type {
+    background-color: white;
+    width:150px; height: 45px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    color:rgb(34, 34, 34);
+    margin-top: 15px;
+}
+/* 데스티 css */
+
+.travel_des {
+    width: 25%; 
+    height: 50%;
+    display: flex;
+    flex-flow:row nowrap;
+}
+.travel_des .des_left {
+    width:25%; height: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.travel_des .des_left p {
+    width:50px; height: 50px;
+    background: url(../images/back5.webp) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.travel_des .des_right {
+    width:75%; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-size: 0.750em;
+}
+
+.travel_des .des_right h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}

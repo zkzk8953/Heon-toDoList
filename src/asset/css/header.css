@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.header_wrap {
+    width:100%; height: 50px;
+    background-color: #fffdec;
+    position:fixed;
+    left: 0; top: 0;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    z-index: 998;
+
+}
+
+.header_wrap h1 {
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.2em;
+}
+
+.header_wrap .menu_btn {
+    position: absolute;
+    background: url(../images/pngegg.png) no-repeat center center;
+    background-size: contain;
+    width:25px; height: 25px;
+    right: 20px; top:50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+.header_wrap_fix {
+    width:80%; height: 50px;
+    background-color: #fffdec;
+    position:fixed;
+    left: 50%; top:5%;
+    transform:translateX(-50%);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    z-index: 998;
+    border-radius: 25px;
+    transition: width 0.4s, top 0.4s;
+}
+
+.header_wrap_fix h1 {
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.2em;
+}
+
+.header_wrap_fix .menu_btn {
+    position: absolute;
+    background: url(../images/pngegg.png) no-repeat center center;
+    background-size: contain;
+    width:25px; height: 25px;
+    right: 20px; top:50%;
+    transform: translateY(-50%);
+}

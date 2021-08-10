@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+.todo_card {
+    width:90%; height: 70px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px dotted #000;
+    position: relative;
+}
+
+
+.label_css1 {
+    width:20px; height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.label_css2 {
+    width:20px; height: 20px;
+    background-color: #77635c;
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.todo_card input {
+    width: 5%; 
+    background: none;
+    opacity: 0;
+}
+
+.todo_card .work {
+    width:70%; height: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.todo_card_h3 {
+    font-weight: 600;
+}
+
+.todo_card_p {
+    font-size: 0.875em;
+    color:rgba(0,0,0,0.5);
+}
+
+.todo_card_active {
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.todo_card_active2 {
+    font-size: 0.875em;
+    color:rgba(0,0,0,0.5);
+    text-decoration:line-through;
+}
+
+.card_btn {
+    display: flex;
+    flex-flow:row nowrap;
+    width:20%;
+}
+
+.todo_card button:nth-of-type(1) {
+    background:url(../images/pen.png) no-repeat center center;
+    background-size: contain;
+    height: 30px; width:30px;
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.todo_card button:nth-of-type(2) {
+    background:url(../images/gar.png) no-repeat center center;
+    background-size: contain;
+    height: 30px; width:30px; 
+    margin-left: 15px;
+    transition: transform 0.3s;
+}
+
+.todo_card button:hover {
+    transform:scale(0.95);
+}
+
+
+@media screen and (max-width:670px) {
+
+
+    .card_btn {
+        display: flex;
+        flex-flow:row nowrap;
+        width:30%;
+    }
+    
+    .todo_card button:nth-of-type(1) {
+        background:url(../images/pen.png) no-repeat center center;
+        background-size:cover;
+        height: 25px; width:25px;
+        margin-left: 15px;
+        transition: transform 0.3s;
+    }
+
+    .todo_card .work {
+        width:55%; height: 100%;
+
+    }
+
+
+
+    .todo_card button:nth-of-type(2) {
+        background:url(../images/gar.png) no-repeat center center;
+        background-size:cover;
+        height: 25px; width:25px; 
+        margin-left: 15px;
+        transition: transform 0.3s;
+    }
+
+
+}
+
+
+
+
+
