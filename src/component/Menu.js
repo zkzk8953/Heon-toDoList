@@ -21,6 +21,7 @@ function Menu(props){
                 <button onClick={props.onToggle}>❌</button>
                 <div className="link_wrap">
                     <Link to="/product" onClick={props.onToggle}>클론코딩</Link>
+                    <Link to="/map" onClick={props.onToggle}>맵</Link>
                 </div>
             </div>
         </div>
