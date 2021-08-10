@@ -6,6 +6,7 @@ import Header from './component/Header';
 import Main from './pages/Main';
 import Product from './pages/Product';
 import Menu from './component/Menu'
+import Map from './component/Map';
 
 function App() {
   const [스위치,set스위치] = useState(false);
@@ -25,6 +26,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/product" component={Product} />
+        <Route path="/map" component={Map} />
       </Switch>
     </>
   );
