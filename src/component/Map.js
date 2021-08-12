@@ -45,7 +45,7 @@ export default function Map () {
       setPoints(copy)
       setHoverSwitch(false)
       setModalSwitch(false) 
-      localStorage.setItem('location',JSON.stringify(copy))   
+      localStorage.setItem('location',JSON.stringify(copy));   
     }
   }
 
