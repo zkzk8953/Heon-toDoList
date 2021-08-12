@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 .menu_wrap {
     position: fixed;
     width:100vw; height: 100vh;
@@ -64,19 +66,18 @@
     flex-flow:row nowrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .map_wrap {
-    margin-left: 10%;
-    width: 600px; height: 600px;
-    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+    width: 70%; height: 100%;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .map {
     width: 500px; height: 500px;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
 
@@ -90,6 +91,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    transition: 0.3s;
   }
   
   
@@ -105,28 +108,85 @@
     align-items: center;    
     transform: scale(1.5);
     transition: 0.3s;
+    z-index: 999;
+    position: relative;
   }
+
+  .circleText {
+      width: 150px; height: 100px;
+      position: absolute;
+      top:-110px;
+      background-color: red;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:scale(0);
+      opacity: 0;
+      z-index: 999;
+      padding: 5px;
+      text-align: center;
+      font-size: 1.2em;
+      transition: 0.3s;
+      font-family: 'Jua', sans-serif;
+  }
+
+  .circleText_hover {
+    width: 150px; height: 100px;
+    position: absolute;
+    top:-110px;
+    background-color: #0078d4;
+    opacity: 1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:scale(1);
+    transition: 0.3s;
+    z-index: 999;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Jua', sans-serif;
+}
+
+
 
   .map_side {
       padding-top: 50px;
-      width: 50%; height: 100%;
+      width: 30%; height: 100%;
       display: flex;
       flex-flow:column nowrap;
-      box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+      
+  }
+  .map_content button {
+    position: absolute;
+    font-size: 1.5em;
+    right:20px; top:20px;
+  }
+
+  .map_content_hover button {
+    position: absolute;
+    font-size: 1.5em;
+    right:20px; top:20px;
+
   }
 
   .map_content {
-    height: 20%; width:100%;
+    height: 200px; width:100%;
     background-color: #ffeedd;
     border-bottom: 5px solid #e1b5a5;
     border-left: 5px solid #e1b5a5;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Jua', sans-serif;
+    font-size: 0.875em;
+    position: relative;
   }
 
   .map_content_hover {
-    height: 20%; width:100%;
+    height: 200px; width:100%;
     background-color: #e1b5a5;
     border-bottom: 5px solid #e1b5a5;
     border-left: 5px solid #e1b5a5;
@@ -135,15 +195,100 @@
     align-items: center;
     transition: 0.3s;
     color:#fff;
+    font-family: 'Jua', sans-serif;
+    font-size: 0.875em;
+    position: relative;
   }
 
 
   .map_content h2 {
       font-size: 2.0em;
       font-weight: 600;
+      font-family: 'Jua', sans-serif;
     }
 
   .map_content_hover h2 {
       font-size: 2.0em;
       font-weight: 600;
+      font-family: 'Jua', sans-serif;
+    }
+
+
+
+    .plus_location {
+        position: absolute;
+        left:30px; top:100px;
+        width: 55px; height: 55px;
+        z-index: 999;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #77635c;
+        color:#fff;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        opacity: 0;
+        animation: anima 1s infinite alternate linear ;
+        font-family: 'Jua', sans-serif;
+    }
+
+    .plus_location_on {
+        position: absolute;
+        left:30px; top:100px;
+        width: 55px; height: 55px;
+        z-index: 999;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #77635c;
+        color:#fff;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+        opacity: 1;
+        transition: 0.3s;
+        animation: anima 1s infinite alternate  ;
+        font-family: 'Jua', sans-serif;
+    }
+
+
+    @keyframes anima {
+        0% {top:80px}
+        100% {top:100px}
+    }
+
+    .modal_wrap {
+        width: 100%; height: 100%;
+        position: absolute;
+        z-index:99998;
+        background-color: rgba(0,0,0,0.4);
+        font-family: 'Jua', sans-serif;
+    }
+
+    .modal_page {
+        width:500px; height: 300px;
+        background-color:#189bfa;
+        display: flex;
+        flex-flow:column nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 10px 10px 1px rgba(0,0,0,1);
+        border:3px solid #000;
+        position: absolute;
+        z-index: 99999;
+        left: 20%;
+        font-family: 'Jua', sans-serif;
+    }
+    .modal_page input {
+        width:60%;
+        border:3px solid #000;
+        border-radius: 5px;
+        background-color: #ffeedd;
+        height: 60px;
+        margin-bottom: 20px;
+        font-family: 'Jua', sans-serif;
+        font-size: 1.2em;
+    }
+    .modal_page button {
+        font-size: 2.5em;
     }
