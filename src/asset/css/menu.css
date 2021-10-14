@@ -230,6 +230,7 @@
         opacity: 0;
         animation: anima 1s infinite alternate linear ;
         font-family: 'Jua', sans-serif;
+        cursor: pointer;
     }
 
     .plus_location_on {
@@ -248,12 +249,13 @@
         transition: 0.3s;
         animation: anima 1s infinite alternate  ;
         font-family: 'Jua', sans-serif;
+        cursor: pointer;
     }
 
 
     @keyframes anima {
-        0% {top:80px}
-        100% {top:100px}
+        0% {top:100px}
+        100% {top: 80px}
     }
 
     .modal_wrap {
