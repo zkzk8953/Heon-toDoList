@@ -1,7 +1,7 @@
 # yarn install 후 yarn start 로 실행
 
 react 개발자로 도약하기 위해 시작한 첫 프로젝트입니다.
-api통신을 공부하기 위해 localStorage를 대신 사용하여 get, post, delete, put의 통신을 대신 체험해볼 수 있었습니다.
+api통신을 체험하기 위해 localStorage를 대신 사용하여 get, post, delete, put의 통신을 대신 체험해볼 수 있었습니다.
 hook들을 사용한 state, props 관리와 생명주기 사이클에 대한 공부를 병행하며 프로젝트를 진행하였습니다.
 
 
