@@ -1,5 +1,5 @@
-# yarn install
-# yarn star
+# yarn install => yarn start 로 실행
+
 
 ## todoList 
 
