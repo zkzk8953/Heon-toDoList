@@ -1,4 +1,1 @@
-# yarn install
-# yarn start
-
-to-do-list 
+to-do-list
