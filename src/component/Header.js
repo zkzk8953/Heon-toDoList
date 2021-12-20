@@ -18,7 +18,7 @@ function Header(props){
 
     return (
         <div className={scrollPosition < 100 ? "header_wrap" : "header_wrap_fix"} >
-            <h1><Link to="/"> Daseul 👩‍🦰</Link></h1>
+            <h1><Link to="/"> 성헌's App </Link></h1>
             <button className="menu_btn" onClick={props.onToggle}></button>
         </div>
     )
