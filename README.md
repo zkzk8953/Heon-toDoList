@@ -1,5 +1,5 @@
-yarn install
-yarn start로 실행
+# yarn install
+# yarn star
 
 ## todoList 
 
