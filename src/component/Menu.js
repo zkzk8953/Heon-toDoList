@@ -20,7 +20,6 @@ function Menu(props){
             <div className={props.스위치 === false ? "menu_fact_close" : "menu_fact" }>
                 <button onClick={props.onToggle}>❌</button>
                 <div className="link_wrap">
-                    <Link to="/product" onClick={props.onToggle}>클론코딩</Link>
                     <Link to="/map" onClick={props.onToggle}>맵</Link>
                 </div>
             </div>

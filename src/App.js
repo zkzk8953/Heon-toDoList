@@ -4,7 +4,6 @@ import { Route,Link,Switch } from 'react-router-dom';
 import { useState } from 'react';
 import Header from './component/Header';
 import Main from './pages/Main';
-import Product from './pages/Product';
 import Menu from './component/Menu'
 import Map from './component/Map';
 
@@ -25,7 +24,6 @@ function App() {
       <Menu 스위치={스위치} set스위치={set스위치} onToggle={onToggle} css1={css1} setCss2={setCss2} css2={css2} setCss1={setCss1}/>
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route path="/product" component={Product} />
         <Route path="/map" component={Map} />
       </Switch>
     </>
